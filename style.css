@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    margin-bottom: 100px;
+}
+
+.btn{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 3px;
+}
+
+.modal-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(circle at 52% 94%, rgba(169, 169, 169,0.04) 0%, rgba(169, 169, 169,0.04) 50%,rgba(199, 199, 199,0.04) 50%, rgba(199, 199, 199,0.04) 100%),radial-gradient(circle at 96% 98%, rgba(61, 61, 61,0.04) 0%, rgba(61, 61, 61,0.04) 50%,rgba(201, 201, 201,0.04) 50%, rgba(201, 201, 201,0.04) 100%),radial-gradient(circle at 93% 97%, rgba(227, 227, 227,0.04) 0%, rgba(227, 227, 227,0.04) 50%,rgba(145, 145, 145,0.04) 50%, rgba(145, 145, 145,0.04) 100%),radial-gradient(circle at 79% 52%, rgba(245, 245, 245,0.04) 0%, rgba(245, 245, 245,0.04) 50%,rgba(86, 86, 86,0.04) 50%, rgba(86, 86, 86,0.04) 100%),linear-gradient(90deg, rgb(210, 9, 198),rgb(25, 38, 118));;
+    color: #fff;
+    position: relative;
+    transform: translateY(-250%);
+    transition: transform 0.2s ease;
+}
+
+.modal-box.active{
+   transform: translateY(-40%);
+}
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
